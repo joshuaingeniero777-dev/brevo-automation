@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to Create an Automation in Brevo</title>
+    <!-- Importing CSS -->
+     <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 style="text-align: center; margin-bottom: 50px;">How to Create a Brevo Automation</h1>
+    
+    <h2>Starting Point </h2>
+    <img src="images/Screenshot 2026-07-28 195643.png">
+    <p>This is the starting point, the Brevo homepage. Here are some key sections/modules featured on the homepage:</p>
+    <ul>
+        <li>Integrations with WordPress, WooCommerce, Shopify, and other apps</li>
+        <li>Email deliverability tools</li>
+        <li>Marketing automation (email, SMS, website tracking)</li>
+        <li>Transactional email (password resets, order confirmations, shipping updates)</li>
+        <li>E-commerce tools (payments, loyalty programs)</li>
+        <li>Multichannel customer engagement across Chat, WhatsApp, Email, Messenger, and Instagram</li>
+        <li>Customer success stories/case studies (ed-tech, restaurant loyalty programs, airline personalization)</li>
+    </ul>
+
+    <h2>Step 1:</h2>
+    <img src="images/Screenshot 2026-07-28 201436.png">
+    <p>First, you need to select the 'Automations' section found on the left panel.</p>
+
+    <h2>Step 2:</h2>
+    <img src="images/Screenshot 2026-07-28 201908.png">
+    <p>Once you have selected 'Automations' you will be taken to the Automations page where you access workflows, messages, and logs.</p>
+    <p><strong>Workflows:</strong> This is where you build and manage your actual automations — the visual drag-and-drop canvas where you set triggers, actions, and rules (e.g., "contact added to list → wait 2 days → send email"). It's where you create an automation, add triggers/actions/rules, and activate it so contacts start flowing through it. It's also your dashboard for each automation's stats — active, started, finished, and suspended contacts.</p>
+    <p><strong>Messages:</strong> This is a library of every email (or other message) used inside your automations, separate from the canvas itself. All automation messages currently used in the new editor are listed here, where you can view, edit, and share them with other users on your account. You can create a brand-new message from scratch, or select an existing message to reuse — and if you edit a reused message, every linked automation step updates in sync. Handy for finding and tweaking message content without having to dig back into the workflow canvas.</p>
+    <p><strong>Logs:</strong> This is your troubleshooting/monitoring hub, split into three tabs: Workflow logs (everything that happened within a specific automation — monitoring contact progress and spotting where someone's stuck), Event logs (detailed insight into how contacts interact with your forms, website, emails, and automations), and Contacts in Workflow (which contacts are currently active or waiting in a given automation, with the ability to remove up to 50 at a time in case of an error).</p>
+
+    <h2>Step 3:</h2>
+    <img src="images/automations_annotated.png">
+    <p>Next step is to select the 'Create an automation' button.</p>
+
+    <h2>Step 4:</h2>
+    <img src="images/create_automation_annotated.png">
+    <p>Select, 'Create from scratch' which will take you to the automation builder.</p>
+
+    <h2>Step 5:</h2>
+    <img src="images/Screenshot 2026-07-28 203312.png">
+    <p>This is the automation builder where you will be creating the actual email automation.</p>
+
+    <h2>Brevo Automation Builder: A Basic Guide</h2>
+    <p>This guide walks through the core parts of the automation builder screen in Brevo (the editor you land on after clicking Create an automation), so you know what each area does before you start building.</p>
+
+    <p><strong>1. The Left Sidebar</strong></p>
+    <p>Three tabs control what you're looking at while editing an automation:</p>
+    <ul>
+        <li><em>Builder</em> — the main view, where you actually assemble your automation on the canvas using triggers, actions, and rules.</li>
+        <li><em>Settings</em> — automation-level configuration, such as the automation's name, entry/exit conditions, and other general options.</li>
+        <li><em>Activity</em> — where you can check live stats on how contacts are moving through the automation once it's active (started, active now, finished, suspended, etc.).</li>
+    </ul>
+
+    <p><strong>2. The Top Bar</strong></p>
+    <p>Running across the top of the editor:</p>
+    <ul>
+        <li><em>Automation name (e.g. "Automation #3")</em> — click to rename it.</li>
+        <li><em>Undo/redo arrows</em> — step backward or forward through recent edits.</li>
+        <li><em>Save status</em> shows when your automation was last auto-saved (e.g. "Saved today at 19:33").</li>
+        <li><em>Active/Inactive toggle</em> — shows whether the automation is currently live.</li>
+        <li><em>Activate automation</em> — turns the automation on so real contacts can start entering it.</li>
+        <li><em>Test</em> — sends a test run through the workflow using a real contact (usually yourself), so you can confirm messages and logic work before going live.</li>
+        <li><em>Exit editor</em> — leaves the builder and returns you to the Automations list.</li>
+    </ul>
+
+    <p><strong>3. The Step Panel (left of the canvas)</strong></p>
+    <p>This is your toolbox. It's organized into three tabs:</p>
+    <p><em>Triggers</em></p>
+    <p>Define when a contact enters the automation. Every automation needs at least one trigger, and triggers can only be placed in the first row of the canvas. Common examples:</p>
+    <ul>
+        <li>Contact added to list</li>
+        <li>Contact removed from list</li>
+        <li>Contact matches custom filters</li>
+        <li>Contact is in a segment</li>
+        <li>Anniversary (e.g. birthday)</li>
+        <li>Form submitted</li>
+        <li>WhatsApp reply received</li>
+    </ul>
+    <p>You can add more than one trigger to a single automation — a contact enters as soon as they meet any one of them.</p>
+    <p><em>Actions</em></p>
+    <p>Define what happens to a contact once they're in the workflow — sending an email, SMS, WhatsApp message, adding a tag, creating a task, updating an attribute, and so on.</p>
+    <p><em>Rules</em></p>
+    <p>Add logic to the workflow — conditions, branches (if/else splits), wait steps, or filters that route contacts down different paths depending on their behavior or data.</p>
+    <p>Search by step name if you know what you're looking for, or browse the categorized lists (Contacts, Forms, WhatsApp, Email, etc.).</p>
+
+    <p><strong>4. The Canvas</strong></p>
+    <p>The large open area on the right is where you actually build the automation visually:</p>
+    <ul>
+        <li>Drag and drop a step from the side panel onto the canvas, or click a step and choose where to place it.</li>
+        <li>Valid drop zones are highlighted as you drag.</li>
+        <li>Steps connect top to bottom, forming the path a contact follows.</li>
+        <li>Click any placed step to configure its settings in a side panel.</li>
+        <li>Steps can be duplicated, deactivated (skipped without deleting), moved, or deleted (via the three-dot menu on each step).</li>
+    </ul>
+    <p>A brand-new automation starts empty, with a prompt to drop your first trigger onto the canvas.</p>
+
+    <p><strong>5. The Basic Building Flow</strong></p>
+    <ol>
+        <li>Pick a trigger (or several) — this decides who enters the automation and when.</li>
+        <li>Add actions and rules below it to build out the sequence — e.g. send an email, wait, check a condition, branch, send another message.</li>
+        <li>Configure each step by clicking it and filling in its settings in the side panel.</li>
+        <li>Test the automation to make sure it behaves as expected.</li>
+        <li>Activate the automation to make it live — from that point on, contacts who meet your trigger conditions will automatically enter and move through the steps.</li>
+        <li>Use Activity (or Automations > Logs, outside the editor) afterward to monitor contacts moving through, spot anyone stuck, and troubleshoot.</li>
+    </ol>
+
+    <img src="images/Screenshot 2026-07-28 205853.png"
+</body>
+</html>
